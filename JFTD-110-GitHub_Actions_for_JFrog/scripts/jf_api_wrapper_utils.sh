@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Patrick rocks!
+
 jf_api_request() {
     # Make authenticated API request to JFrog services
     # Usage: jf_api_request <server_id> <method> <endpoint> [data] [debug]
