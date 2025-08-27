@@ -59,10 +59,10 @@ jobs:
         uses: jfrog/setup-jfrog-cli@v4
         id: setup-cli
         env:
-          JF_URL: ${{vars.JF_RT_URL}}
+          JF_URL: ${{vars.ARTIFACTORY_URL}}
         with:
           version: latest
-          oidc-provider-name: ${{ vars.JF_OIDC_PROVIDER_NAME }}
+          oidc-provider-name: jfrog-githuboidc
 
       - name: "Run only if value is present"
         if: steps.setup-jfrog-cli.outputs.oidc-token != ''
